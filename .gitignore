@@ -1,0 +1,17 @@
+#	VS Code
+**/.vscode/**
+**/*.code-workspace
+
+
+#	Build Files
+Code/Makefile/clean.cmd
+Code/Makefile/run.cmd
+**/Obj/**
+
+
+#	Excel Files
+**/*.xlsx
+
+
+#	Git Attributes
+**/.gitattributes
