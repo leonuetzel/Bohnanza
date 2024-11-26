@@ -6,7 +6,7 @@
 #	Build Files
 Code/Makefile/clean.cmd
 Code/Makefile/run.cmd
-Code/Makefile/Makefile.mk
+Code/Makefile/makefile.mk
 **/Obj/**
 
 
