@@ -54,6 +54,7 @@ class Player
 		
 		
 		//	Notifiers for Game Actions executed by any Player - these Functions will be called by the Game
+		virtual void notification_gameStarted(uint8 playerID, const std::vector<std::pair<Bohnanza::e_bean, uint8>>& fields, const std::vector<Bohnanza::e_bean>& hand) = 0;
 		virtual void notification_phase1_plant(uint8 playerID, uint8 fieldID, Bohnanza::e_bean bean) = 0;
 		virtual void notification_phase2_tradeHappened(uint8 playerIDrequesting, uint8 playerIDTradePartner, const std::map<Bohnanza::e_bean, uint8>& beansOffered, const std::map<Bohnanza::e_bean, uint8>& beansRequested) = 0;
 		virtual void notification_phase2_plantBeanFromTradePartner(uint8 playerID, uint8 fieldID, Bohnanza::e_bean bean) = 0;

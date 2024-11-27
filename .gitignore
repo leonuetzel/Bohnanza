@@ -4,7 +4,6 @@
 
 
 #	Build Files
-Code/Makefile/clean.cmd
 Code/Makefile/makefile.mk
 **/Obj/**
 
@@ -15,3 +14,7 @@ Code/Makefile/makefile.mk
 
 #	Git Attributes
 **/.gitattributes
+
+
+#	Executable Files
+**/*.exe

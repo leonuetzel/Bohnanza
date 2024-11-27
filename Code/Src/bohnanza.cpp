@@ -152,6 +152,23 @@ ITN::feedback Bohnanza::run()
 	m_started = true;
 	
 	
+	//	Notify all Players
+	for(uint32 i = 0; i < m_players.size(); ++i)
+	{
+		Player& player = *m_players[i].player;
+		std::vector<std::pair<e_bean, uint8>> fields;
+		for(uint8 j = 0; j < 2; ++j)
+		{
+			fields.push_back(m_players[i].field[j]);
+		}
+		if(m_players[i].ownsThirdField == true)
+		{
+			fields.push_back(m_players[i].field[2]);
+		}
+		player.notification_gameStarted(i, fields, m_players[i].hand);
+	}
+	
+	
 	while(1)
 	{
 		for(auto& i: m_players)

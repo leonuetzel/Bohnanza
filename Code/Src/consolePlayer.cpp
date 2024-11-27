@@ -474,6 +474,12 @@ void ConsolePlayer::action_phase2_tradeWithPlayerOnTurn(Bohnanza& bohnanza, uint
 
 
 
+void ConsolePlayer::notification_gameStarted(uint8 playerID, const std::vector<std::pair<Bohnanza::e_bean, uint8>>& fields, const std::vector<Bohnanza::e_bean>& hand)
+{
+	
+}
+
+
 void ConsolePlayer::notification_phase1_plant(uint8 playerID, uint8 fieldID, Bohnanza::e_bean bean)
 {
 	
